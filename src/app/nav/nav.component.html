@@ -1,0 +1,64 @@
+<img title="Mariachis Book" (click)="goHome();" src="../../assets/vihuela-guy.png" class="vihuela-home" alt="Mariachis book logo">
+<h1 class="mat-display-3" style="padding: 2rem 0; margin:0;"><strong>{{title}}</strong></h1>
+<h1 class="ipads hideme" style="padding: 2rem 0; margin:0; font-size: 35px;"><strong>{{title}}</strong></h1>
+ 
+ <mat-toolbar style="background: #242424;">
+    <button (click)="goHome();" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <!-- <mat-icon>menu</mat-icon> -->
+    <mat-icon class="mat-icon">home</mat-icon>
+    </button>
+    <span class="spacer"></span>
+<img id="usaFlagImg" title="Mariachis in the United States" routerLink="/mariachis/usa" src="../../assets/usa-flag.png" class="bandera-link">
+
+<img id="mexFlagImg" title="Mariachis en Mexico"  routerLink="/mariachis/mex" src="../../assets/mex-flag.png" class="bandera-link">
+
+<img id="otherFlagImg" class="bandera-link" title="Mariachis in Other Countries"  routerLink="/mariachis/other" src="../../assets/other-flag.png" style="width: 4em;">
+
+    <span class="spacer"></span>
+    <a id="topMariachisLink" class="mat-icon ipads-top-links" style="display: none;" routerLink="/mariachis/dashboard">Top Mariachis</a>
+    <!-- <a id="topMariachisLink" class="mat-icon ipads-top-links" style="display: none;" routerLink="/mariachis/dashboard" (click)="noBackBtn();">Top Mariachis</a> -->
+    <span class="spacer"></span>
+    <span class="spacer"></span>
+    <a id="loginlink" class="mat-icon ipads-top-links" style="display: none;" routerLink="/mariachis/user/login">Log in</a>
+    <span class="spacer"></span>
+    <a class="mat-icon ipads-top-links" style="display: none;" routerLink="/mariachis/user/registration" >Sign up</a>
+    <span class="spacer"></span>
+
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon><span>favorite</span></mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+<div class="ipads hideme lead my-links-div">
+    <div><a class="lower-menu" routerLink="/mariachis/dashboard">Top Mariachis</a> | 
+    <a class="lower-menu" routerLink="/mariachis/user/login">Log in</a>  |  
+    <a class="lower-menu" routerLink="/mariachis/user/registration">Sign up</a></div>
+</div>
+
+<!-- <img title="Mariachis Book"  routerLink="/mariachis" src="../../assets/vihuela-guy.png" style="margin:1rem 1rem auto 0;border-radius: 50%;width: 80px; float: left; cursor: pointer;" alt="Mariachis book logo">
+<h1 class="mat-display-3" style="padding: 2rem 0; margin:0;"><strong>{{title}}</strong></h1> -->
+
+<!-- <div style="background: #242424; padding-bottom: 30px;vertical-align: middle;padding-left:20px;padding-right:20px; padding-top:5px;">
+<mat-icon class="my-icon" routerLink="/mariachis" aria-hidden="false" aria-label="home icon">home</mat-icon>
+
+<div routerLink="/mariachis/dashboard" class="my-icon">See the Top Mariachis</div>
+
+<div routerLink="/mariachis/user/registration" class="my-icon">Sign up</div><div class="my-icon">account_circle</div>
+<div routerLink="/mariachis/user" class="my-icon">Log in</div><div class="my-icon">login</div> 
+</div>-->
+<br>
+<br>
+
+
+<!-- <img id="usaFlagImg" title="Mariachis in the United States" routerLink="/mariachis/usa" src="../../assets/usa-flag.png" class="bandera-link">
+
+ <img id="mexFlagImg" title="Mariachis en Mexico"  routerLink="/mariachis/mex" src="../../assets/mex-flag.png" class="bandera-link">
+
+<img id="otherFlagImg" class="bandera-link" title="Mariachis in Other Countries"  routerLink="/mariachis/other" src="../../assets/other-flag.png" style="width: 4em;"> -->
+
+<br>
+<br> 

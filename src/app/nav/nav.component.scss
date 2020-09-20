@@ -1,1 +1,54 @@
-/*nav.component.scss*/
+.spacer {
+    flex: 1 0 auto;
+  }
+  .vihuela-home {
+    margin:1rem 1rem auto 0;
+    border: solid 1px #777777;
+    border-radius: 50%;
+    width: 80px; 
+    float: left; 
+    cursor: pointer;
+  }
+  .vihuela-home:hover {
+    border-color: #ffffff;
+  }
+  .bandera-link {
+    border-radius: 50%; 
+    width: 4em; 
+    height: 4em; 
+    cursor: pointer;
+    margin-left:1em;
+    opacity: 75%;
+    border: solid 1px #333333;
+  }
+  .bandera-link:hover { 
+    opacity: 100%;
+    border-color: #ffffff;
+    box-shadow: 0 0 20px #ffffff;
+  }
+// .my-icon {
+//   cursor: pointer;
+//   color:#f9a303;
+//   float: left;
+// }
+// .my-icon:hover {
+//   color:#faee86;
+// }
+.mat-icon, .lower-menu {
+  color:#f9a303;
+}
+.mat-icon:hover, .lower-menu:hover {
+  color:#fcf3a5;
+}
+.mat-icon span {
+  color:#b85486;
+}
+.mat-icon span:hover {
+  color: red;
+}
+.lower-menu {
+    padding: 4px;
+}
+.my-links-div {
+  padding-top: 20px;
+}
