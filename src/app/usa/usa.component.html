@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+<div class="row">
+<div class="col-sm-4">
+<h1>Mariachis in the United States</h1>
+<ul id="ulIndex" *ngFor="let mariachi of mariachis" [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'USA' ? 'block' : 'none'}">
+<li><a href="javascript:void(0);" (click)="onSelect(mariachi);hideVihuelaGuy();" [class.selected]="mariachi === selectedMariachi">{{mariachi.mariachiGroupName}}</a>
+<br>
+<small class="text-secondary">{{mariachi.mariachiGroupCountry}}</small></li>
+</ul>
+</div>
+<div class="col-sm-8">
+<div id="vihuelaguy" class="mg-img-first" style="background: url('../../assets/mariachisbook-main-usa.png'); background-size: contain;background-repeat: no-repeat;background-position: top center;"></div>
+<app-mg-detail [mariachi]="selectedMariachi"></app-mg-detail>
+</div>
+</div>
