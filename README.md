@@ -1,2 +1,2 @@
-# angular
+# mariachisbook
 mariachisbook.com web application
