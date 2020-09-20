@@ -1,0 +1,39 @@
+
+
+<div *ngIf="mariachi">
+    <div class="card">
+        <div class="card-header bg-dark text-white"><h1>{{mariachi.mariachiGroupName | uppercase}}</h1></div>
+            <div class="card-body">
+            <div class="mg-img" style="background-image: url('{{mariachi.mariachiGroupImageUrl}}'); background-size: cover;background-repeat: no-repeat;background-position: top center;"></div>
+                <div class="desc">
+                <div><span>Group Name: </span>{{mariachi.mariachiGroupName}}</div>
+                <div><span>Location: </span>{{mariachi.mariachiGroupCity}}, {{mariachi.mariachiGroupState}} {{mariachi.mariachiGroupZip}}</div>
+
+                <div [ngStyle]="{'display': mariachi.mariachiGroupOtherCountry === '' ? 'block' : 'none'}"><span>Country: </span>{{mariachi.mariachiGroupCountry}}</div>
+                <div [ngStyle]="{'display': mariachi.mariachiGroupOtherCountry != '' ? 'block' : 'none'}"><span>Country: </span>{{mariachi.mariachiGroupOtherCountry}}</div>
+
+                <div><span>Group Contact: </span>{{mariachi.mariachiGroupContactName}}</div>
+                <div><span>Phone: </span>{{mariachi.mariachiGroupContactPhone}}</div>
+                <div><span>Email: </span>{{mariachi.mariachiGroupContactEmail}}</div>
+                <div><span>Website: </span> <a href="{{mariachi.mariachiGroupWeb}}">{{mariachi.mariachiGroupWeb}}</a></div>
+
+                </div>
+            </div> 
+            <div class="card-footer">
+                <img class="bandera" [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'MEXICO' ? 'block' : 'none'}" src="../../assets/mex-flag.png">
+                <div [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'MEXICO' ? 'block' : 'none'}" class="bandera-text">MEXICO</div>
+                <img class="bandera" [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'USA' ? 'block' : 'none'}" src="../../assets/usa-flag.png">
+                <div [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'USA' ? 'block' : 'none'}" class="bandera-text">UNITED STATES</div>
+                <img class="bandera" [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'OTHER' ? 'block' : 'none'}" src="../../assets/other-flag.png">
+                <div [ngStyle]="{'display': mariachi.mariachiGroupCountry === 'OTHER' ? 'block' : 'none'}" class="bandera-text">OTHER COUNTRIES</div>
+                <div [ngStyle]="{'display': mariachi.mariachiGroupOtherCountry != '' ? 'block' : 'none'}" class="bandera-text"><small>&nbsp;&nbsp;{{mariachi.mariachiGroupOtherCountry}}</small></div>
+                <!-- <label>name:<input [(ngModel)]="mariachi.mariachiGroupName" placeholder="Name"/></label> -->
+            </div>
+    </div>
+  </div>
+  <!-- <br> -->
+  <button class="btn btn-primary" *ngIf="dashboard" (click)="goBack();">Go back</button>
+  <br>
+  <br>
+  <br>
+  <!-- <button *ngIf="dashboard" class="btn btn-primary" routerLink="/mariachis/dashboard">go back</button>/ -->
