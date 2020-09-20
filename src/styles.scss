@@ -1,0 +1,114 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;color: #ffffff; background: #000000; }
+
+.col-sm-4, .col-sm-8 {
+padding-left: 0;
+padding-right: 0;
+}
+.selected {
+  color: #f9a303;
+}
+.hideme {
+  display: none;
+}
+// .container {
+//     padding-top: 4em;
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     margin-right: auto;
+//     margin-left: auto;
+  
+//       @media (min-width: 768px) {
+//           width: 750px;
+//       }
+//       @media (min-width: 768px) {
+//         width: 750px;
+//       }
+//       @media (min-width: 992px) {
+//         width: 970px;
+//       }
+//       @media (min-width: 1200px) {
+//         width: 1170px;
+//       }
+//   } 
+
+.mg-img-first {
+  width:auto;
+  height: 60em;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background:#F0F0F0;
+}
+.mg-img {
+  width:auto;
+  height: 400px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background:#F0F0F0;
+}
+.bandera {
+  width: 3em;
+  float: left;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+.bandera-text {
+  margin-top: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0 0 0 15px;
+   li {
+     font-size: 1.2em;
+     font-weight: 700;
+   }
+}
+.card {
+  color: #3f3f3f;
+}
+.card-header {
+  padding-top: 30px;
+}
+.card-body {
+  padding: 0;
+    div.desc {
+      padding: 1em;
+    }
+}
+#ulIndex a:hover {
+  color:#50cbfc;
+}
+.alert-dark {
+  background: #3f3f3f;
+  color:#ffffff;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top:5em;
+}
+form {
+  label{
+    color: #999999;
+  }
+}
+
+      @media (max-width: 768px) {
+        .mat-display-3 {
+            display: none;
+          }
+          .ipads {
+            display: block;
+          }
+          .ipads-top-links {
+            display: none;
+          }
+          .lower-menu {
+            display: inline;
+          }
+      }
+      @media (min-width: 992px) {
+          .ipads-top-links {
+            display: inline!important;
+          }
+        }
