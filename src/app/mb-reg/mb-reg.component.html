@@ -1,0 +1,70 @@
+<app-nav></app-nav>
+<h1 class="text-center">Mariachi Registration</h1>
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+<div class="card card-dark">
+
+
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+        <p>Select Mariachi Type</p>
+
+        <div class="form-check">
+            <label class="form-check-label">
+              <input formControlName="mariachiType" class="form-check-input" type="radio" name="mariachiType" id="mariachiTypeGroup" value="Group" checked>
+              Mariachi Group
+            </label>
+          </div>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input formControlName="mariachiType" class="form-check-input" type="radio" name="mariachiType" id="mariachiTypeIndividual" value="Individual">
+              Mariachi Individual
+            </label>
+          </div>
+
+<br>
+<br>
+
+        <label>
+          Mariachi Name:
+          <input required class="form-control" type="text" formControlName="mariachiName" placeholder="Mariachi Name">
+        </label>
+<br>
+        <label>
+          Username:
+          <input required class="form-control" type="text" formControlName="userName" placeholder="Username">
+        </label>
+<br>
+        <label>
+          Email:
+          <input required class="form-control" type="email" formControlName="userEmail" placeholder="Email">
+        </label>
+<br>
+        <label>
+          Password:
+          <input required class="form-control" type="password" formControlName="userPass" placeholder="Password">
+        </label>
+<br>
+<br>
+        <button class="btn btn-primary" type="submit" [disabled]="!profileForm.valid">Register</button>
+      </form>
+
+
+
+      <!-- <p class="forgot-pass small">
+        <a routerLink="/mariachis/user/reset-password">Forgot Password</a></p> -->
+
+</div> <!-- .card -->
+
+
+<!-- <div class="alert alert-dark">
+      <p class="lead">Not Registered?</p> 
+      <p><strong>List your Mariachi Group in Mariachis book.</strong></p> 
+      <button type="button" class="btn btn-primary" routerLink="/mariachis/user/registration">
+      Register Now!
+    </button>
+</div> -->
+    </div>
+    <div class="col-sm"></div>
+</div>
