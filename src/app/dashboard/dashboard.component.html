@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<!-- <app-mariachi-search></app-mariachi-search> -->
+<h1 class="text-center">Top Mariachi Groups</h1>
+<div id="mgDashboard" class="grid grid-pad">
+<!-- <a *ngFor="let mariachi of mariachis" class="col-1-4" (click)="onSelect(mariachi);hideDash();" href="javascript:void(0);"> -->
+<a *ngFor="let mariachi of mariachis" class="col-1-4" (click)="hideDash();" routerLink="/mariachis/detail/{{mariachi.id}}">
+  <div class="module hero">
+    <img style="height:120px;" src="{{mariachi.mariachiGroupImageUrl}}" alt="{{mariachi.mariachiGroupImageUrl}}">
+    <h4>{{mariachi.mariachiGroupName}}</h4>
+  </div>
+</a>
+</div>
+<!-- <app-dash-details [mariachi]="selectedMariachi"></app-dash-details> -->
+<!-- <app-mg-detail [mariachi]="selectedMariachi"></app-mg-detail> -->
+
+<!-- <a *ngFor="let mariachi of mariachis" class="col-1-4"
+href="javascript:void(0);" (click)="onSelect(mariachi);hideDash();"> -->
