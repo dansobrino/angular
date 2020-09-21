@@ -1,0 +1,80 @@
+<app-nav></app-nav>
+<h1 class="text-center">Welcome! Please Log In</h1>
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+<div class="card card-dark">
+
+
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <label>
+          User Name:
+          <input required class="form-control" type="text" formControlName="userName" placeholder="Username">
+        </label>
+<br>
+        <label>
+          Password:
+          <input required class="form-control" type="password" formControlName="userPass" placeholder="Password">
+        </label>
+<br>
+<br>
+        <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Submit</button>
+      </form>
+
+
+
+      <p class="forgot-pass small">
+        <a routerLink="/mariachis/user/reset-password">Forgot Password</a></p>
+
+</div> <!-- .card -->
+
+
+<div class="alert alert-dark">
+      <p class="lead">Not Registered?</p> 
+      <p><strong>List your Mariachi Group in Mariachis book.</strong></p> 
+      <button type="button" class="btn btn-primary" routerLink="/mariachis/user/registration">
+      Register Now!
+    </button>
+</div>
+    </div>
+    <div class="col-sm"></div>
+</div>
+
+
+
+
+
+
+<!-- <app-nav></app-nav>
+<div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+<div class="card card-dark">
+      <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <label>
+          User Name:
+          <input required class="form-control" type="text" formControlName="userName" placeholder="Username">
+        </label>
+<br>
+        <label>
+          Password:
+          <input required class="form-control" type="password" formControlName="userPass" placeholder="Password">
+        </label>
+<br>
+        <button class="btn btn-success" type="submit" [disabled]="!profileForm.valid">Submit</button>
+      </form>
+      <p class="forgot-pass small"><a routerLink="/mariachis/user/reset-password">Forgot Password</a></p>
+</div>
+<div class="alert alert-dark">
+      <p class="lead">Not Registered?</p> 
+      <p><strong>List your Mariachi Group in Mariachis book.</strong></p> 
+      <button type="button" class="btn btn-primary" routerLink="/mariachis/user/registration">
+      Register Now!
+    </button>
+</div>
+    </div>
+    <div class="col-sm"></div>
+</div>
+<p>
+  Form Status: {{ profileForm.status }} 
+</p> -->
